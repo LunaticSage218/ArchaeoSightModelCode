@@ -791,8 +791,6 @@ def main():
         print(f"\nSample of exported test data (first 3 rows):")
         print(test_data.head(3).to_string())
         
-        return classifier, accuracy, binary_accuracy, cv_scores
-        
     except Exception as e:
         print(f"Error during model training/testing: {e}")
         import traceback
